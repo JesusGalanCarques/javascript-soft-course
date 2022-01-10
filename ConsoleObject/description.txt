@@ -1,0 +1,1 @@
+Se muestran las formas de mostrar mensajes a través de consola.

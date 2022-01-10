@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [5,4,3,2,1];
+
+        // Muestra los elementos del array segun su indice
+        // Aunque no existe el elemento 5 no se produce ningun fallo si no que se muestra como vacio o undefined
+        console.log(arr[0], arr[4], arr[5]);
+
+        // Revierte el array
+        arr.reverse();
+        console.log(arr);
+        
+        // Funcion map
+        arr = arr.map(function (elem) {
+            elem *= elem // Multiplica cada uno de los elementos por si mismo
+            return elem;
+        })
+
+        console.log(arr);
+
+        // Se puede usar la funcion map de la siguiente manera
+
+        arr = arr.map(Math.sqrt); // Los elementos pasan a la funcion de raiz cuadrada y por tanto se revierte la operacion anterior
+        console.log(arr);
+
+        // Funcion join para unir los elementos del array en una cadena de texto
+        arr = arr.join('|'); // Une los elementos por el parametro delimitador
+        console.log(arr);
+
+        // Funcion split para separar una cadena de texto y volcarla sobre un array
+        arr = arr.split('|'); // Separa la cadena de texto en base al parametro delimitador
+        console.log(arr); // Notese que los elementos han dejado de ser de tipo Number
+
+        // Inserta un elemento en el array al final
+        arr.push("6");
+        console.log(arr);
+
+        // Inserta un elemento en el array al principio
+        arr.unshift("0");
+        console.log(arr);
+
+        // Elmina el ultimo elemento y retorna el elemento que hemos quitado
+        var elementoBorrado = arr.pop();
+
+        console.log(arr, elementoBorrado);
+        
+        // Uso de la funcion splice
+        arr.splice(1, 1, "10"); // Elimina 1 elemento desde la posicion 1 e introduce en su lugar un 10 como cadena de texto
+        console.log(arr);
+
+        arr.splice(4, 1, "40", "50"); // Elimina 1 elemento desde la posicion 4 e introduce un 40 en su lugar y  un 50 en la siguiente posicion
+        console.log(arr);
+
+        // Splice no siempre tiene que borrar algo
+        arr.splice(1, 0, "99"); // Añade la cadena 99 en la posicion 1
+        console.log(arr);
+
+        // Uso de la funcion slice
+        arr = arr.slice(1, 2); // Borra los elementos que no esten entre la posicion 1 y 2, el arreglo incluye el elemento en la posicion 1, PERO NO EL DE LA POSICION 2
+        console.log(arr);
+    </script>
+</body>
+</html>

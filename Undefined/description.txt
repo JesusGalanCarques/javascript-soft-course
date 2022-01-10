@@ -1,0 +1,3 @@
+A continuación se muestra una comparación de los objetos null y undefined y se verifica que con doble igual (comparación simple) el resultado es True es decir,
+contienen el mismo significado en este caso empty o vacío. Con triple igual (comparación a nivel de objeto) se verifica que aunque ambos significan lo mismo no proceden
+del mismo objeto.

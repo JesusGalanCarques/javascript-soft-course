@@ -1,0 +1,1 @@
+Muestra las operaciónes más importantes que se pueden realizar con el objecto Array

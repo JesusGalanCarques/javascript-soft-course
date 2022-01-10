@@ -1,0 +1,5 @@
+Se supone que cuando una página web continene un script aunque este esté vacío, el entorno se prepara para procesar
+javascript y deberían aparecer los objetos globales que pueden ser comprobados desde la consola.
+
+Se realiza un fichero index.html que contendrá javascript y un fichero index.no.js que no contiene javascript y
+se comprueban los objetos globales de la página para verificar este comportamiento.
